@@ -1,0 +1,3 @@
+packages:
+  - "alisa-sdk"
+  - "packages/*"

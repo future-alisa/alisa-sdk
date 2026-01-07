@@ -1,0 +1,17 @@
+{
+  "name": "alisa-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pnpm --filter \"./packages/**\" run build",
+    "clean": "pnpm -r exec rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.1",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "rimraf": "^5.0.0"
+  }
+}
