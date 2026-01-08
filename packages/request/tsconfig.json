@@ -2,7 +2,11 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "."
+    "rootDir": ".",
+    "composite": true, // 建议开启，有利于 Monorepo 的增量编译
+    "declaration": true, // 显式声明生成定义文件
+    "emitDeclarationOnly": false
   },
-  "include": ["index.ts"]
+  "include": [".", "**/*.ts"],
+  "exclude": ["dist", "node_modules"]
 }
