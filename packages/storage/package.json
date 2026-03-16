@@ -1,6 +1,7 @@
 {
-  "name": "@alisa-sdk/request",
+  "name": "@alisa-sdk/storage",
   "version": "1.0.0",
+  "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -11,12 +12,15 @@
     }
   },
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --clean && tsc -p tsconfig.json --emitDeclarationOnly --outDir dist"
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.1",
   "dependencies": {
-    "axios": "^1.13.2",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "@aws-sdk/client-s3": "^3.1009.0"
   },
   "devDependencies": {
     "tsup": "^8.5.1"

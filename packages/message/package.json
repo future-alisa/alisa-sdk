@@ -1,5 +1,5 @@
 {
-  "name": "log",
+  "name": "message",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,8 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.18.1",
-  "devDependencies": {
-    "@types/node": "^25.5.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+  "dependencies": {
+    "apache-rocketmq": "1.0.0-rc1",
+    "kafkajs": "^2.2.4"
   }
 }
